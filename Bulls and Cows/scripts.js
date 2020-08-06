@@ -14,6 +14,7 @@ async function onStartClick() {
         let amountOfNearHits = calcAmountOfNearHits(computerNumber, userGuess);
         document.write("<b>Your Guess: " + userGuess + ".  Amount of hits: " + amountOfHits +
          ".  Amount of near hits: " + amountOfNearHits + ".</b><br>");
+        //stop the thread for 1 second
         await new Promise(r => setTimeout(r, 1000));
     }
     alert("Game over. The number is " + computerNumber);
